@@ -506,6 +506,7 @@ header.scrolled .header_nav a::after{
     top:0;
     right:0;
     border-bottom-left-radius: 25px;
+    z-index: 99;
 }
 
 .header_menu-toggle .header_menu-icon{
@@ -1062,5 +1063,5 @@ clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
  * ## responsive design
  *------------------------------------------------------------------------------ */
 @media screen and (max-Width: 800px) {
-  
+
 }
