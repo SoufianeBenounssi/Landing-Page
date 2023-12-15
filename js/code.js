@@ -99,6 +99,11 @@ const ScrollSpy = function() {
 
 };
 
+
+window.setTimeout(function(){
+    alert("hello dev");
+}, 500);
+
 (function ssInit() {
 
 
