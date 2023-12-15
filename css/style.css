@@ -1067,4 +1067,39 @@ clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
   .hero_bg {
     clip-path:  polygon(0% 0%,100% 0%,100% 65%,40% 84%,0% 65%);
   }
+
+  .hero_content h1{
+    display: flex;
+    font-size: 2.5rem;
+    font-family: var(--font-1);
+    font-weight: 600;
+    letter-spacing: .04rem;
+    line-height: 3rem;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  .hero_content h3{
+    font-family: var(--font-mono);
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+    line-height: var(--vspace-0_75);
+    position: relative;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+
+  .hero .Profile-Pic{
+    display: none;
+  }
+
 }
