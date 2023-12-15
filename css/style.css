@@ -667,13 +667,14 @@ header.scrolled .header_nav a::after{
     top: -1.2rem;
   }
 
-  .logo{
+  .logo{/*
     font-size: var(--text-xs);
     left: 1rem;
-    top: -.5rem;
+    top: -.5rem;*/
+    display: none;
   }
 
-  .menu-is-open .logo {
+  /*.menu-is-open .logo {
     transform: translateX(290%);
     background-color: white;
     color: rgb(15, 155, 8);
@@ -681,11 +682,13 @@ header.scrolled .header_nav a::after{
     transition: all .5s ease-in-out;
     -webkit-transition:  all .5s ease-in-out;
   }
-  
+  */
 
   .contactButton{
     display: none;
   }
+
+
 }
 
 
@@ -1052,3 +1055,12 @@ FOOTER {
 /*
 clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
 */
+
+
+
+/*------------------------------------------------------------------------------
+ * ## responsive design
+ *------------------------------------------------------------------------------ */
+@media screen and (max-Width: 800px) {
+  
+}
