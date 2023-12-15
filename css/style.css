@@ -507,6 +507,7 @@ header.scrolled .header_nav a::after{
     right:0;
     border-bottom-left-radius: 25px;
     z-index: 99;
+    cursor: pointer;
 }
 
 .header_menu-toggle .header_menu-icon{
