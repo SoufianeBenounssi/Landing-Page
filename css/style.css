@@ -1069,6 +1069,10 @@ clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
     clip-path:  polygon(0% 0%,100% 0%,100% 65%,40% 84%,0% 65%);
   }
 
+  .hero_bg-bottom {
+    clip-path:  polygon(0% 53.5%,40% 85.5%,100% 53.5%,100% 100%,0% 100%);
+  }
+
   .hero_content h1{
     display: flex;
     font-size: 2.5rem;
@@ -1103,4 +1107,115 @@ clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
     display: none;
   }
 
+}
+
+
+
+/* ------------------------------------------------------------------- 
+ * ## Responsive design
+ * ------------------------------------------------------------------- 
+*/
+
+@media screen and (max-Width: 800px){
+    .header {
+        top: 0;
+        background: transparent;
+        clip-path: none;
+    }
+
+    .menu-is-open .header {
+        top: 0;
+        background: transparent;
+        clip-path: none;
+    }
+
+    .header .row{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .header_nav-wrap, .header_nav {
+        background: rgba(0, 106, 168, 0.659);
+    }
+
+    .header_nav-wrap {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .header_nav {
+        font-size: var(--text-xs);
+        font-weight: 500;
+        height: auto;
+        width: 100%;
+        padding: var(--vspace-2) 4.8rem var(--vspace-0_25) 4.8rem;
+        transform: translateY(-2rem);
+        -webkit-transform: translateY(-2rem);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .contactButton{
+        display: none;
+    }
+
+    .header_nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .header_nav ul li {
+        display: block;
+        border-top: 1px dotted rgba(255, 255, 255, 0.226);
+        position: relative;
+    }
+
+    .header_nav ul li a {
+        height: auto;
+        padding: var(--vspace-0_25) .4rem var(--vspace-0_25) .4rem;
+        line-height: var(--vspace-1);
+        color: white;
+    }
+
+    .header_menu-toggle {
+        display: block;
+        border-bottom-left-radius: 50% ;
+    }
+
+    .menu-is-open .header_nav-wrap {
+        height: 32rem;
+        min-height: var(--header-height);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), 
+                    -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+
+    .menu-is-open .header_nav {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        transition: all .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transition: all .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-delay: .5s;
+        -webkit-transition-delay: .5s;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .header__nav {
+        display: block;
+    }
 }
