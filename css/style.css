@@ -1064,7 +1064,14 @@ clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
 /*------------------------------------------------------------------------------
  * ## responsive design
  *------------------------------------------------------------------------------ */
+
+ 
+
 @media screen and (max-Width: 800px) {
+
+  /*------------------------hero---------------------------*/
+
+
   header.scrolled{
     background-color: transparent;
   }
@@ -1107,6 +1114,41 @@ clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
   .hero .Profile-Pic{
     display: none;
   }
+
+  /*------------------------ about ---------------------------*/
+
+  .about{
+    top: -3.1rem;
+    height: 155vh;
+  }
+
+  .about-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 19%;
+    grid-gap: -2rem;
+  }
+
+  .about-content .col {
+    width: 100%;
+  }
+
+  .about-content .background {
+    order: 2;
+  }
+
+  .about-content .Profile-Pic {
+    order: 1;
+    padding: 0;
+    top: 0%;
+  }
+
+  .about-content .What-I-do {
+    order: 3;
+  }
+
+
 
 }
 
