@@ -1065,6 +1065,9 @@ clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
  * ## responsive design
  *------------------------------------------------------------------------------ */
 @media screen and (max-Width: 800px) {
+  header.scrolled{
+    background-color: transparent;
+  }
   .hero_bg {
     clip-path:  polygon(0% 0%,100% 0%,100% 65%,40% 84%,0% 65%);
   }
