@@ -8,7 +8,6 @@
   <link id="mode" type="text/css" rel="stylesheet" href="css/style.css" style="transition: all .3s ease-in-odiut;">
   <meta name="Description" content="Resume">
   <title>Soufiane Benounssi</title>
- <script src="Js/code.js" defer></script>
   <script src="Js/plugins.js" defer></script>
 </head>
 
@@ -230,38 +229,39 @@ window.addEventListener('scroll', function(){
 **-------------------------------------------------------- 
 */
 
-const ScrollSpy = function() {
 
-    const sections = document.querySelectorAll(".target-section");
 
-    // Add an event listener listening for scroll
-    window.addEventListener("scroll", navHighlight);
+const sections = document.querySelectorAll(".target-section");
 
-    function navHighlight() {
+// Add an event listener listening for scroll
+window.addEventListener("scroll", navHighlight);
+
+function navHighlight() {
     
-        // Get current scroll position
-        let scrollY = window.scrollY;
+  // Get current scroll position
+  let scrollY = window.scrollY;
     
-        // Loop through sections to get height(including padding and border), 
-        // top and ID values for each
-        sections.forEach(function(current) {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop -150;
-            const sectionId = current.getAttribute("id");
+  // Loop through sections to get height(including padding and border), 
+  // top and ID values for each
+  sections.forEach(function(current) {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop -150;
+    const sectionId = current.getAttribute("id");
         
-           /* If a section enters the window it will get its link's parent tag "li" 
-            * will get a ClassID of "current". Else if it leaves the screen 
-            * the ClassID of "current" will get removed from that link's parent tag*/
+    /* If a section enters the window it will get its link's parent tag "li" 
+    * will get a ClassID of "current". Else if it leaves the screen 
+    * the ClassID of "current" will get removed from that link's parent tag*/
             
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                document.querySelector(".header_nav a[href*=" + sectionId + "]").parentNode.classList.add("current");
-            } else {
-                document.querySelector(".header_nav a[href*=" + sectionId + "]").parentNode.classList.remove("current");
-            }
-        });
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector(".header_nav a[href*=" + sectionId + "]").parentNode.classList.add("current");
+    } 
+    else {
+      document.querySelector(".header_nav a[href*=" + sectionId + "]").parentNode.classList.remove("current");
     }
+  });
+}
 
-};
+
 
 
 window.setTimeout(function(){
