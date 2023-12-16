@@ -38,6 +38,33 @@ const mobileMenu = function (){
             if(toggleButton.classList.contains('is-clicked')) toggleButton.classList.remove('is-clicked');
         }
     });
+
+    toggleButton.addEventListener('touchstart', function(event){
+        event.preventDefault();
+        toggleButton.classList.toggle('is-clicked');
+        body.classList.toggle('menu-is-open');
+    });
+
+    headerWrap.querySelectorAll('.header_nav a').forEach(function(link){
+        link.addEventListener('click', function(evt){
+
+            //800px and bellow
+            if (window.matchMedia('(max-width: 800px)').matches){
+                toggleButton.classList.toggle('is-clicked');
+                body.classList.toggle('menu-is-open');
+                
+            }
+        });
+    });
+
+    window.addEventListener('resize', function(){
+
+        //800px and above
+        if(window.matchMedia('(min-width: 801px)').matches) {
+            if(body.classList.contains("menu-is-open")) body.classList.remove("menu-is-open");
+            if(toggleButton.classList.contains('is-clicked')) toggleButton.classList.remove('is-clicked');
+        }
+    });
 };
 
 
