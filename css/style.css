@@ -843,7 +843,7 @@ header.scrolled .header_nav a::after{
   height: 85vh;
   position: relative;
   background-color: rgb(18, 18, 18);
-  top: -6.5vh;
+  top: -6.7vh;
   overflow: hidden;
   justify-content: center;
   text-align: center;
@@ -929,6 +929,17 @@ header.scrolled .header_nav a::after{
   font-weight: 500;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio h1::after{
+  content: "";
+  display: block;
+  width: 14%;
+  height: 2px;
+  background: linear-gradient(010deg,rgb(255, 255, 255), rgb(18, 18, 18),rgb(255, 255, 255));
+  position: relative;
+  top: 10px;
+  left: 42.8%;
 }
 
 .portfolio > p{
@@ -1027,6 +1038,9 @@ header.scrolled .header_nav a::after{
   height: 71vh;
   width: 100%;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -1045,15 +1059,168 @@ header.scrolled .header_nav a::after{
   background-size: cover;
 }
 
+.skills h1{
+  font-family: var(--font-1);
+  font-size: 3.5rem;
+  font-weight: 400;
+  position: relative;
+  top: 5rem;
+  left: 0;
+  color: rgb(255, 255, 255);
+}
+
+.skills h1::after{
+  content: "";
+  display: block;
+  width: 14%;
+  height: 2px;
+  background: linear-gradient(010deg, rgb(18, 18, 18),rgb(255, 255, 255),rgb(18, 18, 18));
+  position: relative;
+  top: 10px;
+  left: 42.8%;
+}
+
 /*------------------------------------------------------------------------------
  * ## Footer
  *------------------------------------------------------------------------------ */
 
 
 FOOTER {
-  height: 60vh;
+  width: 100%;
+  height: 75vh;
   background-color: rgb(18, 18, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  grid-gap: 1rem;
 }
+
+.conclusion{
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: rgb(18 , 18, 18);
+  width: 50%;
+  height: 100%;
+  padding-left: 10px;
+  position: relative;
+  color: white;
+}
+
+.conclusion h3{
+  font-family: var(--font-1);
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: inherit;
+  letter-spacing: 2px;
+  left: 10%;
+  color: rgb(91, 90, 90);
+  line-height: 1px;
+}
+
+.conclusion h1{
+  font-family: var(--font-1);
+  font-size: 3.5rem;
+  font-weight: 500;
+  position: inherit;
+  left: 10%;
+}
+
+.conclusion p{
+  font-family: var(--font-1);
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: inherit;
+  width: 90%;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  left: 10%;
+}
+
+.conclusion p span{
+  font-weight: 708;
+}
+
+.social{
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+  height: 100%;
+  margin-right: 10px;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.social .email {
+  position: relative;
+  top: 0%;
+  left: 20%;
+}
+
+.social .email h4{
+  font-family: var(--font-1);
+  font-size: 2rem;
+  line-height: 1px;
+}
+
+.social .email p{
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.social .email a{
+  text-decoration: none;
+  color: white;
+}
+
+.social .email::after{
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  background: linear-gradient(010deg, rgb(18, 18, 18),rgb(255, 255, 255),rgb(18, 18, 18));
+  position: relative;
+  top: 10px;
+}
+
+.signature {
+  font-family: soufiane;
+  color: #302f2f;
+  cursor: default;
+}
+
+.socials-icons ul{
+  display: flex;
+  flex-direction: row;
+  grid-gap: 5rem;
+  position: relative;
+  top: 1rem;
+  left: 16%;
+}
+
+
+.socials-icons ul li {
+  display: inline-block;
+  flex-direction: row;
+}
+
+.socials-icons ul li a{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.socials-icons svg{
+  position: relative;
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+
+
 
 /*
 clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
@@ -1224,7 +1391,21 @@ clip-path: polygon(28.1% 70%, 100% 01.3%,10% 110000%, 0% 30%);
 
   .skills-bg {
     clip-path: polygon(0% 0%,42% 8%,100% 0%,100% 100%,0% 100%);
+    z-index: -1;
   }
+
+  FOOTER {
+    height: 700vh;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  
+.social .email p{
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0px;
+}
 
 }
 
