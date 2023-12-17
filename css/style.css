@@ -1148,7 +1148,7 @@ header.scrolled .header_nav a::after{
       "HTML CSS"
       "MSOffice SQL";
       margin: 2rem;
-      color:#004b77;
+      color:white;
       font-family: var(--font-1);
   }
 }
