@@ -129,10 +129,79 @@ const ScrollSpy = function() {
 };
 
 
+/* -------------------------------------------------------
+** Skills progress bar animation
+**-------------------------------------------------------- 
+*/
+const skills = document.getElementById("skills");
+const skill = document.querySelectorAll(".HardSkills .skill");
+
+if(window.matchMedia('(min-width: 1903px)').matches){
+    const options = { 
+        rootMargin: "0px 0px -300px"
+    };
+
+    const skillsObserver = new IntersectionObserver(
+        function(entries, skillsObserver) {
+            entries.forEach( entry => {
+
+                if(entry.isIntersecting){
+                    skill.forEach(function(div){
+                        div.classList.add("animate");
+                    }
+                    )
+                }else{
+                    skill.forEach(function(div){
+                        div.classList.remove("animate");
+                    }
+                    )
+                }
+            });
+        }, 
+        options
+    );
+    skillsObserver.observe(skills);
+}
+
+if(window.matchMedia('(max-width: 420px)').matches){
+    const options = { 
+        rootMargin: "0px 0px -200px"
+    };
+
+    const skillsObserver = new IntersectionObserver(
+        function(entries, skillsObserver) {
+            entries.forEach( entry => {
+
+
+                
+                if(entry.isIntersecting){
+                    skill.forEach(function(div){
+                        div.classList.add("animate");
+                    }
+                    )
+                }else{
+                    skill.forEach(function(div){
+                        div.classList.remove("animate");
+                    }
+                    )
+                }
+
+
+            });
+        }, 
+        options
+    );
+    skillsObserver.observe(skills);
+}
+
+
+/* Skills progress bar animation end */
+/*
+
 window.setTimeout(function(){
     alert("hello dev");
 }, 500);
-
+*/
 (function ssInit() {
 
     mobileMenu();
