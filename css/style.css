@@ -1440,7 +1440,7 @@ FOOTER {
 @media screen and (orientation: portrait) { 
   .social .email p:first-of-type{
     letter-spacing: .5px;
-    
+    width: 80%;
   }
   .social .email {
     position: relative;
