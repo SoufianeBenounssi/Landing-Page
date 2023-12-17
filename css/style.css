@@ -509,9 +509,9 @@ header.scrolled .header_nav a::after{
     width: 4.5rem;
     height:4.5rem;
     position: absolute;
-    top:0;
-    right:0;
-    border-bottom-left-radius: 25px;
+    top:1rem;
+    right:3%;
+    border-radius: 50px;
     z-index: 99;
     cursor: pointer;
 }
@@ -585,6 +585,8 @@ header.scrolled .header_nav a::after{
     z-index: 999;
   }
 
+
+
   .header {
     top: 0;
     background: transparent;
@@ -634,6 +636,10 @@ header.scrolled .header_nav a::after{
     display: block;
     border-top: 1px dotted rgba(255, 255, 255, 0.226);
     position: relative;
+  }
+
+  header.scrolled .header_nav a{
+    color: rgb(255, 255, 255);
   }
 
   .header_nav ul li:last-child{
