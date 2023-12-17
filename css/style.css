@@ -1437,6 +1437,13 @@ FOOTER {
   color: white;
 }
 
+@media screen and (orientation: portrait) { 
+  .social .email p:first-of-type{
+    letter-spacing: .5px;
+  }
+  
+}
+
 .social .email::after{
   content: "";
   display: block;
