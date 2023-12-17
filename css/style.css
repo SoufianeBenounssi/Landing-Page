@@ -1762,7 +1762,7 @@ circle{
 
 
 
-  /*------------------------ skills ---------------------------*/
+  /*------------------------ contact ---------------------------*/
 
   FOOTER {
     height: 180vh;
@@ -1831,6 +1831,7 @@ circle{
 
   .social .email > p:first-of-type{
     position: relative;
+    font-size: 1.1rem;
     padding-left: 1rem;
   }
 
