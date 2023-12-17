@@ -1829,13 +1829,13 @@ circle{
     font-size: 1.3rem;
     letter-spacing: 1px;
   }
-
+  /*
   .social .email > p:first-of-type{
     position: relative;
     font-size: 1.1rem;
     padding-left: 1rem;
     letter-spacing: .5px;
-  }
+  }*/
 
   .social .email::after{
     width: 100%;
