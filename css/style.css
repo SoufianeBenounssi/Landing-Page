@@ -932,7 +932,7 @@ header.scrolled .header_nav a::after{
 .portfolio {
   margin: 0;
   width: 100%;
-  height: 115vh;
+  height: 120vh;
   position: relative;
   top: -3rem;
   right: 0;
@@ -996,7 +996,9 @@ header.scrolled .header_nav a::after{
 }
 
 .work .col{
+  position: relative;
   width: 30%;
+  height: auto;
 }
 
 .work .col img{
@@ -1006,6 +1008,7 @@ header.scrolled .header_nav a::after{
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
+
 
 .work .col img:hover{
   transform: scale(1.6);
@@ -1018,14 +1021,15 @@ header.scrolled .header_nav a::after{
   bottom: 0;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
+  z-index: 999;
 }
 
 .eternalZ{
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
-.eternalZ:hover{
-  transform: translateX(+16.15%);
+.work .eternalZ img:hover{
+  transform: translateX(19.15%) scale(1.6);
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
@@ -1035,8 +1039,8 @@ header.scrolled .header_nav a::after{
   -webkit-transition: all .3s ease-in-out;
 }
 
-.fitness:hover{
-  transform: translateX(-22%);
+.work .fitness img:hover{
+  transform: translateX(-19%) scale(1.6);
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
@@ -1045,6 +1049,7 @@ header.scrolled .header_nav a::after{
   font-family: var(--font-1);
   font-size: 1.3rem;
   font-weight: 400;
+  line-height: 1.5rem;
 }
 
 /*------------------------------------------------------------------------------
@@ -1235,7 +1240,7 @@ circle{
 }
 @keyframes animJava{
   100%{
-      stroke-dashoffset: 50;
+      stroke-dashoffset: 70;
   }
 }
 
@@ -1311,7 +1316,7 @@ circle{
 }
 @keyframes animKotlin{
   100%{
-      stroke-dashoffset: 150;
+      stroke-dashoffset: 30;
   }
 }
 
@@ -1327,7 +1332,7 @@ circle{
 }
 @keyframes animSQL{
   100%{
-      stroke-dashoffset: 190;
+      stroke-dashoffset: 130;
   }
 }
 
